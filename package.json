@@ -1,0 +1,30 @@
+{
+  "name": "karaoke",
+  "version": "1.0.0",
+  "description": "it's fraemwork for karaoke GymSong Android hdd DVD karaoke machine system",
+  "main": "main.js",
+  "scripts": {
+    "test": "version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Letch49/karaoke.git"
+  },
+  "keywords": [
+    "karaoke",
+    "hd",
+    "GymSong",
+    "Android",
+    "hdd",
+    "DVD",
+    "karoke",
+    "machine",
+    "system"
+  ],
+  "author": "Letch49",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/Letch49/karaoke/issues"
+  },
+  "homepage": "https://github.com/Letch49/karaoke#readme"
+}
