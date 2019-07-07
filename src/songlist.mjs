@@ -1,3 +1,5 @@
+import { wordCount, firstLettersOfWord, splitFolderAndSong } from './functions';
+
 /**
  * 
  * @param {String} songName - filename of song
@@ -13,6 +15,8 @@
  * @param {void} _ - not used, but should be 🧠
  * @returns object ready to wtire in songlist.txt and transport to folder;
  */
-const songToKaraoke = (songName, musicState = 1, artistName, wordCountOfSongName, SongLanguage, VolumeParametrs, spellOfSongName, digitName, spellOfArtist = 3, sexOfArtist, _ = '') => {
+const songToKaraoke = (songName, musicState = 1, artistName, wordCountOfSongName, SongLanguage, VolumeParametrs, spellOfSongName, digitName, spellOfArtist, sexOfArtist = 3, _ = '') => {
   return `${songName};${musicState};${artistName};${wordCountOfSongName};${SongLanguage};${VolumeParametrs};${spellOfSongName};${digitName};${spellOfArtist};${sexOfArtist};${_};`;
 }
+
+export const createSongListItem = (songName, artistName, lang, digitName) => songToKaraoke(songName, 1, artistName, wordCount(songName), lang, 9, firstLettersOfWord(songName), digitName, firstLettersOfWord(artistName))
