@@ -2,9 +2,10 @@
   "name": "karaoke",
   "version": "1.0.0",
   "description": "it's fraemwork for karaoke GymSong Android hdd DVD karaoke machine system",
-  "main": "main.js",
+  "main": "electron.js",
   "scripts": {
-    "test": "version"
+    "test": "version",
+    "start": "electron ./electron.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,12 @@
   "bugs": {
     "url": "https://github.com/Letch49/karaoke/issues"
   },
-  "homepage": "https://github.com/Letch49/karaoke#readme"
+  "homepage": "https://github.com/Letch49/karaoke#readme",
+  "dependencies": {
+    "ffmetadata": "^1.5.0",
+    "requests": "^0.2.2"
+  },
+  "devDependencies": {
+    "electron": "^5.0.6"
+  }
 }
